@@ -1,0 +1,55 @@
+# Poligono: la base dell'edificio
+# Centroide : il centro del Poligono
+
+# Layer: identifica la presidisposizione alla banda ultralarga.
+Non carico tutti i layer del mondo, carico solo quelli della zona.
+Rosso: non predisposto
+Giallo: predisposto e pratica di predisposizione inviata al SINFI
+Verde: predisposto  
+UB : UltraBand (banda ultralarga)
+
+Il cliente gestisce le mappature in modo georeferenziato, le informazioni
+a lui date sono semplici e non molteplici.
+Il cliente deve poter usare solo la app fornita da noi, che dovrà essere semplice
+da usare e dovrà mostrare i dati che gli servono con pochi click.
+
+Per visualizzazione mock-up si intende una prova dell'app (tipo una demo)
+La coordinata del TFO è il centroide.
+
+Esiste un servizio su internet tipo openstreetmap che ti dà la possibilità di tirare
+fuori i poligoni per ogni edificio.
+
+Bisognerà disegnare una architettura del progetto 
+  (frontend, backend e database)
+
+Non si puo fare registrare chiunque a prescindere ma lo IAM filtrerà chi avrà accesso
+
+POSTGRESS E POSTGIS database da utilizzare. (bisognerà utilizzare Javascript)
+Il database non sarà in locale sulla nostra macchina ma su un server.
+
+Fare vedere al cliente passo passo se gli va bene quello che stiamo facendo.
+(inutile andare avanti nel lavoro se non abbiamo certezza della soddisfazione del cliente).
+
+
+
+APPUNTI PEPPE BARRANO
+
+Lavoro tecnico:
+database e backend (SQL + keycloack)
+Creare tabelle per edifici, terminazioni ottiche(TFO) e utenti
+Configurare keycloack per la gestione utenti
+
+Frontend(UI + mappe)
+Costruire la struttura con BOOSTRAP ITALIA
+Integrare openstreetmap per visualizzare i layer
+Creare forme di inserimento per edifici e TFO
+
+Gestione geospaz. / mappe
+Definire come acquisire e caricare i poligoni degli edifici
+Differenziare i colori sulla mappa (rosso/giallo)
+
+Sicurezza e test
+Verificare chi può accedere ai dati
+
+1)Definire poligono e centroide
+2)

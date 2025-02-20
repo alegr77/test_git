@@ -1,0 +1,7 @@
+#esempioasterischispazi
+
+altezza = int(input("Inserire altezza triangolo"))
+for i in range (0, altezza, 1):
+    spazi = altezza - i
+    asterischi = i * 2 + 1
+    print(f"i: {i} - spazi: {spazi} - asterischi: {asterischi}")
